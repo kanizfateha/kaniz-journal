@@ -1,0 +1,3 @@
+linux-distros|Linux distributions explained: how to choose your first distro|A beginner-friendly explanation of Linux distributions, with practical tips for choosing and trying a first one.
+terminal-starter|7 Linux terminal commands for everyday confidence|Learn seven useful, beginner-safe commands for navigating files and using the Linux terminal.
+linux-first-setup|Before you install Linux: a safe first-install checklist|Backups, live USB testing, hardware checks, and other calm preparation before installing Linux.

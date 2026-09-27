@@ -1,0 +1,32 @@
+<p>The terminal is a text-based way to ask your computer to do things. It can look intimidating at first, but you only need a few small commands to navigate folders and inspect files. These examples are intentionally basic and avoid administrator privileges or destructive cleanup.</p>
+<p>Open the terminal app included with your Linux desktop. Commands are entered at the prompt; press Enter to run one. For these examples, keep an eye on the folder you are working in.</p>
+<h2>1. See your current folder with <code>pwd</code></h2>
+<pre><code>pwd</code></pre>
+<p><code>pwd</code> prints the current working directory. It is a useful first check before you create, copy, or move anything.</p>
+<h2>2. List files with <code>ls</code></h2>
+<pre><code>ls
+ls -lah</code></pre>
+<p>The first form lists names in the current folder. The options in <code>ls -lah</code> show more details, include hidden entries, and make file sizes easier to read. Options can vary across systems, so use <code>ls --help</code> if you want to see the details for your version.</p>
+<h2>3. Move between folders with <code>cd</code></h2>
+<pre><code>cd Documents
+cd ..
+cd ~</code></pre>
+<p><code>cd Documents</code> enters a folder named Documents in the current location; <code>cd ..</code> moves up one level; and <code>cd ~</code> returns to your home folder. Use <code>pwd</code> afterward if you are unsure where you landed.</p>
+<h2>4. Create a folder with <code>mkdir</code></h2>
+<pre><code>mkdir linux-notes</code></pre>
+<p>This creates a folder called <code>linux-notes</code> in your current location. If a folder with that name already exists, the command reports that rather than replacing it.</p>
+<h2>5. Copy a file with <code>cp</code></h2>
+<pre><code>cp notes.txt notes-backup.txt</code></pre>
+<p>This makes a second file named <code>notes-backup.txt</code> alongside the original. Check the destination and filenames before running a copy command, especially when copying folders or using wildcard characters.</p>
+<h2>6. Rename or move with <code>mv</code></h2>
+<pre><code>mv draft.txt first-draft.txt</code></pre>
+<p>Here, <code>mv</code> renames a file. It can also move a file to another folder. Because it changes where the original file is, check both names carefully before pressing Enter.</p>
+<h2>7. Find text with <code>grep</code></h2>
+<pre><code>grep -n "TODO" notes.txt</code></pre>
+<p>This searches <code>notes.txt</code> for the text <code>TODO</code> and shows matching line numbers. If there are no matches, the command simply returns no matching lines.</p>
+<h2>Two habits that make the terminal friendlier</h2>
+<ul>
+<li>Use <code>man command</code> (for example, <code>man cp</code>) or <code>command --help</code> to read about a command before trying unfamiliar options.</li>
+<li>Be cautious with commands copied from the internet. Understand what they do, particularly if they include <code>sudo</code>, administrator access, deletion, disk tools, or a command piped straight into a shell.</li>
+</ul>
+<p>Try one command at a time in a folder containing practice files. The terminal becomes less mysterious as each short instruction starts to make sense.</p>

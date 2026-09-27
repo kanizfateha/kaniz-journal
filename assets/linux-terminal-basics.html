@@ -1,0 +1,36 @@
+<p>The terminal looks mysterious the first time you open it. It is just a way to give your computer short, precise instructions by typing commands. You do not need to memorize dozens of them or use the terminal for everything. These four basics help you understand where you are and move around safely.</p>
+
+<p>For this guide, the examples are for looking around—not deleting files or changing system settings. You can try them in your usual terminal app. The prompt symbol (<code>$</code>) is shown for context; you do not type it.</p>
+
+<figure class="wp-block-image size-large"><img src="INLINE_IMAGE_URL" alt="Original illustration of a Linux terminal showing safe beginner commands for finding and listing files."/><figcaption class="wp-element-caption">Start with commands that show you information; there is no need to use administrator privileges for these basics.</figcaption></figure>
+
+<h2>1. Ask, “Where am I?” with <code>pwd</code></h2>
+<p><code>pwd</code> stands for “print working directory.” It shows the full path to the folder the terminal is currently using.</p>
+<pre><code>$ pwd
+/home/kaniz</code></pre>
+<p>Your result will be different. That is okay: it tells you the current location, not where every file on your computer lives.</p>
+
+<h2>2. See what is in a folder with <code>ls</code></h2>
+<p><code>ls</code> lists the visible files and folders at your current location.</p>
+<pre><code>$ ls
+Desktop  Documents  Downloads  Pictures</code></pre>
+<p>Want details such as hidden files, file sizes, and modification dates? Try <code>ls -la</code>. In that command, <code>-l</code> asks for a longer listing and <code>-a</code> includes hidden entries whose names start with a dot.</p>
+
+<h2>3. Change folders with <code>cd</code></h2>
+<p><code>cd</code> means “change directory.” Give it the name of a folder you can see:</p>
+<pre><code>$ cd Documents
+$ pwd
+/home/kaniz/Documents</code></pre>
+<p>To move up one folder, use <code>cd ..</code>. To return to your home folder, use <code>cd ~</code>. Linux distinguishes uppercase from lowercase, so <code>Documents</code> and <code>documents</code> may not be the same name.</p>
+
+<h2>4. Read the help before guessing</h2>
+<p>Many commands have a built-in help option. <code>man ls</code>, for example, opens the manual page for <code>ls</code>; press <code>q</code> to leave it. For a shorter summary, <code>ls --help</code> prints the available options in many common Linux tools.</p>
+
+<h2>Three little habits that make the terminal friendlier</h2>
+<ul><li><strong>Tab-complete names.</strong> Type the first few letters of a file or folder name, then press Tab. The shell may complete it, or show matching choices.</li><li><strong>Use the up-arrow.</strong> It recalls a previous command so you can review or edit it instead of typing it again.</li><li><strong>Read a command before pressing Enter.</strong> A command can do exactly what its options ask. If you do not understand a line you found online, pause and look up the program and its options first.</li></ul>
+
+<p>These commands only inspect or navigate your files. For a first practice session, try <code>pwd</code>, then <code>ls</code>, then <code>cd</code> into a folder you recognize. If a command behaves differently on your distribution, check its manual or your distribution’s documentation—Linux has many tools, and their options can vary.</p>
+
+<h2>Keep learning</h2>
+<ul><li><a href="https://ubuntu.com/tutorials/command-line-for-beginners">Ubuntu: The Linux command line for beginners</a></li><li><a href="https://man7.org/linux/man-pages/man1/pwd.1.html">Manual page: <code>pwd</code></a></li><li><a href="https://man7.org/linux/man-pages/man1/ls.1.html">Manual page: <code>ls</code></a></li></ul>
+<p><em>A gentle first step from Kaniz Fatiha. No memorization contest required.</em></p>

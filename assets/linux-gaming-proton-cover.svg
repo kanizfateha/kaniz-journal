@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<title id="title">Linux gaming with Proton</title><desc id="desc">Original illustration of a luminous game controller and terminal window over a dark green Linux-inspired background.</desc>
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101a16"/><stop offset=".58" stop-color="#1a2b23"/><stop offset="1" stop-color="#263b2e"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#9ce27d" stop-opacity=".24"/><stop offset="1" stop-color="#9ce27d" stop-opacity="0"/></radialGradient>
+ <linearGradient id="screen" x2="0" y2="1"><stop stop-color="#293b30"/><stop offset="1" stop-color="#17241c"/></linearGradient>
+ <linearGradient id="pad" x2="1" y2="1"><stop stop-color="#e0f4ca"/><stop offset="1" stop-color="#83b887"/></linearGradient>
+ <filter id="shadow" x="-.3" y="-.3" width="1.6" height="1.8"><feGaussianBlur in="SourceAlpha" stdDeviation="15"/><feOffset dy="17"/><feComponentTransfer><feFuncA type="linear" slope=".45"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1200" height="675" fill="url(#bg)"/><ellipse cx="795" cy="325" rx="440" ry="360" fill="url(#glow)"/>
+<g fill="none" stroke="#bde5b4" stroke-opacity=".1"><circle cx="870" cy="315" r="270"/><circle cx="870" cy="315" r="218"/><circle cx="870" cy="315" r="326"/></g>
+<g opacity=".26" fill="#c5efb7"><circle cx="703" cy="77" r="2"/><circle cx="1090" cy="157" r="2.5"/><circle cx="1080" cy="480" r="2"/><circle cx="683" cy="521" r="3"/><circle cx="990" cy="70" r="1.5"/><circle cx="1125" cy="333" r="2"/></g>
+<g transform="translate(687 112) rotate(3 193 177)" filter="url(#shadow)">
+ <rect x="0" y="0" width="390" height="232" rx="18" fill="#101914" stroke="#718d76" stroke-width="2"/>
+ <path d="M18 0h354a18 18 0 0 1 18 18v29H0V18A18 18 0 0 1 18 0" fill="#304236"/>
+ <circle cx="22" cy="23" r="5" fill="#ef8973"/><circle cx="41" cy="23" r="5" fill="#eac36e"/><circle cx="60" cy="23" r="5" fill="#a4d489"/>
+ <text x="86" y="27" fill="#cadaca" font-family="monospace" font-size="12">kaniz@linux: ~/games</text>
+ <text x="25" y="86" fill="#b8ed8d" font-family="monospace" font-size="16">$ steam --play</text>
+ <text x="25" y="121" fill="#eff4eb" font-family="monospace" font-size="14">Compatibility layer: Proton</text>
+ <text x="25" y="153" fill="#a5c5a6" font-family="monospace" font-size="13">Checking the game first...</text>
+ <text x="25" y="192" fill="#b8ed8d" font-family="monospace" font-size="14">✓ Ready when you are</text>
+ <rect x="321" y="178" width="8" height="18" rx="1" fill="#b8ed8d"/>
+</g>
+<g transform="translate(774 309) rotate(-8 171 117)" filter="url(#shadow)">
+ <path d="M86 32c15-15 34-21 62-21h46c28 0 47 6 62 21l57 57c31 31 23 83-16 102-22 11-49 5-67-14l-30-30h-57l-30 30c-18 19-45 25-67 14-39-19-47-71-16-102z" fill="url(#pad)" stroke="#ecf8df" stroke-width="3"/>
+ <path d="M79 97h75M117 59v76" stroke="#284b39" stroke-width="15" stroke-linecap="round"/>
+ <circle cx="273" cy="76" r="12" fill="#385c47"/><circle cx="304" cy="105" r="12" fill="#315640"/><circle cx="243" cy="105" r="12" fill="#496c4d"/><circle cx="273" cy="135" r="12" fill="#477c5d"/>
+ <circle cx="177" cy="53" r="10" fill="#4d7153"/><circle cx="209" cy="53" r="10" fill="#4d7153"/>
+ <path d="M168 168c16 13 40 18 59 12" fill="none" stroke="#52805d" stroke-width="5" stroke-linecap="round" opacity=".65"/>
+</g>
+<g transform="translate(111 127)"><path d="M0 13h30m-14-14 15 14-15 14" fill="none" stroke="#b8ed8d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text x="112" y="209" fill="#b8ed8d" font-family="monospace" font-size="15" letter-spacing="3">KANIZFATIHA.SH  /  LINUX FIELD NOTES</text>
+<text x="105" y="297" fill="#f4f4ed" font-family="Georgia,serif" font-size="63" letter-spacing="-2">Game on,</text>
+<text x="105" y="370" fill="#b8ed8d" font-family="Georgia,serif" font-size="67" letter-spacing="-2">Linux.</text>
+<text x="109" y="424" fill="#c2cec2" font-family="system-ui,sans-serif" font-size="19">A practical beginner's guide to Proton</text>
+<path d="M109 485h104" stroke="#83b887" stroke-width="2"/>
+<text x="109" y="523" fill="#a9b7ab" font-family="monospace" font-size="14" letter-spacing="2">CHECK YOUR LIBRARY. THEN PRESS PLAY.</text>
+<rect x="1" y="1" width="1198" height="673" rx="24" fill="none" stroke="#b4d1ad" stroke-opacity=".15" stroke-width="2"/>
+</svg>

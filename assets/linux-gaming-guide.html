@@ -1,0 +1,47 @@
+<p>Can Linux really be a gaming PC? In 2026, it is a more reasonable question than it used to be. Valve’s Proton lets Steam run many Windows games on Linux, and Valve still publishes compatibility fixes: a September 25 Proton Experimental update, for example, addressed issues affecting CEG-protected games and Crysis titles. That is encouraging progress—not a promise that every game will work.</p>
+
+<p>Here is a practical, no-hype way to understand Linux gaming, check the games you care about, and try one without turning setup into a weekend project.</p>
+
+<h2>First, what does Proton actually do?</h2>
+<p>Some games have a native Linux version. If a game does not, Steam may run its Windows version using <strong>Proton</strong>, Valve’s compatibility tool based on Wine and additional components. The goal is to translate the game’s expected Windows environment into something Linux can run. Steam supplies Proton as part of Steam Play; you usually do not need to download Proton from a random website or build it yourself.</p>
+
+<p>Think of Proton as a compatibility bridge, not a Windows virtual machine. It often works with just a click, but games can behave differently depending on their launcher, graphics, updates, and anti-cheat system.</p>
+
+<figure class="wp-block-image size-large"><img src="INLINE_IMAGE_URL" alt="Diagram of the two routes for playing a Steam game on Linux: a native Linux build, or a Windows build running through Proton."/><figcaption class="wp-element-caption">A game may have a native Linux build, or it may run its Windows version through Proton.</figcaption></figure>
+
+<h2>A simple way to check your games</h2>
+<ol>
+<li><strong>Make a short list.</strong> Start with the three or four games you actually play. Compatibility is about specific games, not a blanket yes-or-no verdict on Linux.</li>
+<li><strong>Look at the Steam store and library.</strong> Steam Deck’s Verified and Playable labels are useful signals if you are using a Deck. Valve’s rating considers the experience on that device, including controls and other usability details; it is not a universal rating for every PC configuration.</li>
+<li><strong>Search ProtonDB.</strong> It collects player-submitted reports about how titles run with Proton. Read a few recent reports for your distribution and hardware, and note any small tweaks. Treat them as community experience, not an official guarantee.</li>
+<li><strong>Check multiplayer and anti-cheat separately.</strong> Support can depend on the game developer enabling a compatible setup. A game may launch perfectly while its online mode does not, so verify before switching your main gaming system.</li>
+</ol>
+
+<h2>Try it without over-tuning</h2>
+<p>Install Steam from your distribution’s official software store or package source, sign in, and install one game whose compatibility you have checked. Start with Steam’s defaults. If a game does not launch, first install updates, restart Steam, and read the game's recent reports. Only then try a different Proton version from the game’s <strong>Properties → Compatibility</strong> settings—one change at a time makes it easier to undo a fix that did not help.</p>
+
+<pre><code># A handy Linux check: see which graphics device and driver the system reports
+inxi -G</code></pre>
+<p>The <code>inxi</code> command may not be installed by default, and its package name or installation command depends on your distribution. You can also find your graphics model in your desktop’s system-information settings. Keep the system and graphics drivers supplied by your distro up to date; avoid copying unfamiliar terminal commands from a game forum without understanding what they change.</p>
+
+<h2>What still needs a reality check?</h2>
+<p><strong>“Verified” does not mean “works on every Linux PC.”</strong> Valve’s Verified badge refers to its Steam Deck review criteria. A desktop can have a different graphics card, driver, display, controller, or performance target. Conversely, a game without a Deck badge may still work well on a desktop—the badge is not a substitute for testing your own setup.</p>
+
+<p><strong>Anti-cheat is the main multiplayer question mark.</strong> Valve documents support for some anti-cheat middleware, but the developer must configure and enable support for a particular game. Some games remain unsupported, particularly when they rely on anti-cheat that cannot operate through Proton. Check the current status of the exact title and game mode you want to play.</p>
+
+<p><strong>Performance is game- and machine-dependent.</strong> Proton can add a compatibility layer, and a launch that works is not automatically as fast or as smooth as it would be elsewhere. Hardware, driver versions, updates, and settings all matter. Look for reports from players with comparable hardware rather than trusting one universal performance claim.</p>
+
+<h2>Why people are talking about it now</h2>
+<p>Linux gaming is not only a story about handhelds or one blockbuster game. It is a steady stream of fixes and compatibility work. This week’s Proton Experimental notes are a good example: the September 25 update covered CEG-protected titles, Crysis and Crysis Wars on some newer AMD processors, and several other targeted fixes. Experimental is a testing track; most beginners should stay with Steam’s default Proton choice unless a specific game’s current reports suggest otherwise.</p>
+
+<p>The most useful takeaway is simple: <strong>check the games you care about, then test one.</strong> You do not have to become a command-line expert to start, and you do not have to guess based on a headline. Linux gaming is real, it keeps improving, and compatibility still deserves an honest look before you commit.</p>
+
+<h2>Further reading</h2>
+<ul>
+<li><a href="https://github.com/ValveSoftware/Proton">Valve’s Proton project and documentation</a></li>
+<li><a href="https://www.protondb.com/">ProtonDB community game reports</a></li>
+<li><a href="https://partner.steamgames.com/doc/steamhardware/compat">Steamworks: Steam Deck compatibility ratings</a></li>
+<li><a href="https://partner.steamgames.com/doc/steamhardware/proton">Steamworks: Proton and anti-cheat notes</a></li>
+<li><a href="https://www.gamingonlinux.com/2026/09/proton-experimental-brings-fixes-for-crysis-crysis-wars-ceg-protected-games-early-support-for-32bit-openxr/">GamingOnLinux: September 25 Proton Experimental update</a></li>
+</ul>
+<p><em>Written by Kaniz Fatiha. Compatibility changes as games, drivers, and Proton are updated; check the latest reports for the version you plan to play.</em></p>
